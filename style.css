@@ -1,0 +1,694 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s ease-out;
+    text-decoration: none;
+}
+
+:root {
+    --green: #16a085;
+    --black: #444;
+    --light-color: #777;
+    --box-shadow: .5rem .5rem 0 #16a08533;
+    --text-shadow: .4rem .4rem 0 #00000033;
+    --border: .2rem solid var(--green);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background: #ffff;
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    left: 0;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 9%;
+    align-items: center;
+}
+
+.header a {
+    font-size: 25px;
+    color: var(--black);
+}
+
+.header i {
+    color: var(--green);
+}
+
+.header .navbtn a {
+    font-size: 18px;
+    padding: 0rem 10px;
+    color: var(--light-color);
+}
+
+.header .navbtn a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 20px;
+    color: var(--green);
+    cursor: pointer;
+}
+
+main {
+    padding-top: 10rem;
+    align-items: center;
+    background: #f5f5f5;
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+}
+
+.card img {
+    width: 100%;
+    height: 600px;
+}
+
+main .card .info h1 {
+    font-size: 50px;
+    text-shadow: var(--text-shadow);
+    margin-bottom: 20px;
+    color: var(--black);
+}
+
+main .info {
+    margin: 0px 15px;
+}
+
+main .card .info p {
+    font-size: 18px;
+    margin: 0px 9% 0px 0px;
+    position: relative;
+    text-align: justify;
+    color: var(--light-color);
+    line-height: 30px;
+}
+
+main .card .info button {
+    font-size: 20px;
+    background: #fff;
+    color: var(--green);
+    border: 2px solid var(--green);
+    padding: 10px 45px 10px 18px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: var(--box-shadow);
+}
+
+main .card .info button:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+main .card .info i {
+    font-size: 30px;
+    margin: -3px 8px;
+    position: absolute;
+}
+
+main:hover {
+    box-shadow: 0px 0px 8px 1px silver;
+}
+
+section {
+    margin: 5rem 9%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+section .card {
+    padding: 28px;
+    text-align: center;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    box-shadow: var(--text-shadow);
+}
+
+section .card i {
+    font-size: 50px;
+    color: var(--green);
+    margin-bottom: 15px;
+}
+
+section .card h1 {
+    font-size: 50px;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+}
+
+section .card p {
+    font-size: 20px;
+}
+
+section .card:hover {
+    box-shadow: 0px 0px 8px 3px silver;
+}
+
+.continer {
+    background: #f5f5f5;
+}
+
+.continer .heading {
+    text-align: center;
+    font-size: 30px;
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+
+.continer .heading h1 {
+    padding-top: 30px;
+}
+
+.continer .heading span {
+    color: var(--black);
+}
+
+.continer-card {
+    display: grid;
+    gap: 2rem;
+    padding: 4rem 9%;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.continer .card-2 {
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background: #ffff;
+    padding: 0px 30px;
+}
+
+.continer .continer-card .card-2 .icon {
+    font-size: 50px;
+    padding: 30px 0;
+    color: var(--green);
+}
+
+.continer .continer-card .card-2 h1 {
+    font-size: 25px;
+    color: var(--black);
+    margin-bottom: 16px;
+}
+
+.continer .continer-card .card-2 p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+    color: var(--light-color);
+}
+
+.continer .continer-card .card-2 button {
+    font-size: 20px;
+    padding: 8px 40px 10px 8px;
+    border-radius: 5px;
+    border: 2px solid var(--green);
+    margin-bottom: 30px;
+    background: #fff;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    cursor: pointer;
+}
+
+.continer .continer-card .card-2 button:hover {
+    color: #ffff;
+    background: var(--green);
+}
+
+.continer .continer-card .card-2 button i {
+    font-size: 30px;
+    position: absolute;
+    margin: -2px 8px;
+}
+
+.continer .continer-card .card-2 button:hover i {
+    padding-left: 3px;
+}
+
+.continer .card-2:hover {
+    box-shadow: 0px 0px 8px 3px silver;
+}
+
+.section-3 .heading-3 h1 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30px;
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+}
+
+.section-3 .heading-3 span {
+    color: var(--black);
+}
+
+.card-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    align-items: center;
+    padding: 0px 9%;
+}
+
+.card-3 h1 {
+    font-size: 40px;
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 20px;
+    line-height: 6rem;
+}
+
+.card-3 p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 3rem;
+    margin-bottom: 20px;
+}
+
+.section-3 .card-3 button {
+    font-size: 20px;
+    padding: 8px 10px 8px 8px;
+    border-radius: 5px;
+    border: 2px solid var(--green);
+    margin-bottom: 30px;
+    background: #fff;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    cursor: pointer;
+}
+
+.section-3 .card-3 button:hover {
+    color: #ffff;
+    background: var(--green);
+}
+
+.inner {
+    background: #f5f5f5;
+}
+
+.inner .heading-4 h1 {
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 50px;
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    margin-bottom: 4rem;
+}
+
+.inner .heading-4 span {
+    color: var(--black);
+}
+
+.section-4 {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin: 0px 9%;
+}
+
+.section-4 .card-4 {
+    border: 2px solid var(--green);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    background: #fff;
+    margin-bottom: 50px;
+}
+
+.section-4 .card-4 img {
+    width: 50%;
+    border: 2px solid var(--green);
+    margin: 30px 0px 0px 0px;
+    border-radius: 5px;
+}
+
+.section-4 .card-4 h1 {
+    color: var(--black);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-4 .card-4 p {
+    font-size: 16px;
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+.section-4 .card-4 .icon i {
+    font-size: 25px;
+    margin-top: 20px;
+    border: 2px solid var(--green);
+    padding: 8px 10px;
+    color: var(--green);
+    margin: 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.section-4 .card-4 .icon i:hover {
+    background: var(--green);
+    color: #ffff;
+}
+
+.inner .card-4:hover {
+    box-shadow: 0px 0px 8px 3px silver;
+}
+
+.book-now h1 {
+    text-align: center;
+    font-size: 50px;
+    text-shadow: var(--text-shadow);
+    color: var(--green);
+}
+
+.book-now span {
+    color: var(--black);
+}
+
+.book-now {
+    width: 100%;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    align-items: center;
+    gap: 2rem;
+}
+
+.row form {
+    border: 2px solid var(--green);
+    display: grid;
+    padding: 10px 10px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+}
+
+.row form h1 {
+    text-align: center;
+    font-size: 30px;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.row form input {
+    margin: 10px;
+    border: 2px solid var(--green);
+    padding: 12px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: var(--black);
+}
+
+.row form a {
+    padding: 10px 25px;
+    margin: 10px 16rem;
+    color: var(--black);
+    background-color: #ffff;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.row form a:hover {
+    background: var(--green);
+    color: #ffff;
+}
+
+.card-review {
+    background: #f5f5f5;
+}
+
+.section-10 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    margin: 0px 9%;
+    gap: 2rem;
+    text-align: center;
+}
+
+.card-review h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--green);
+    text-shadow: var(--text-shadow);
+    padding: 20px 0px 0px 0px;
+}
+
+.card-review span {
+    color: var(--black);
+}
+
+.section-8 {
+    border: 2px solid var(--green);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    background: #fff;
+}
+
+.section-8 .inner-img {
+    background: var(--green);
+    padding: 20px 0;
+    clip-path: ellipse(63% 95% at 50% 5%);
+}
+
+.section-8 .inner-img img {
+    width: 25%;
+    border-radius: 50%;
+    border: 5px solid #ffff;
+    margin-bottom: 10px;
+}
+
+.section-8 .inner-img h1 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.section-8 .inner-img i {
+    color: #ffff;
+    font-size: 16px;
+}
+
+.section-8 p {
+    font-size: 16px;
+    margin: 20px;
+    text-align: justify;
+    line-height: 30px;
+    color: var(--light-color);
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 2rem;
+    margin: 5rem 9%;
+}
+
+.blogs .blog-img img {
+    width: 100%;
+}
+
+.blogs .blog-img:hover img {
+    transform: scale(120%);
+}
+
+.inner-bolgs {
+    border: 2px solid var(--green);
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+}
+
+.blog-img {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.blog-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-btn a {
+    color: var(--light-color);
+    font-size: 14px;
+    padding: 20px 0px 15px 0px;
+}
+
+.blog-btn i {
+    color: var(--green);
+    padding: 0px 5px;
+}
+
+.blogs-text h1 {
+    font-size: 30px;
+    color: var(--black);
+    margin-bottom: 20px;
+    font: 600;
+}
+
+.blogs-text p {
+    font-size: 15px;
+    color: var(--light-color);
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.blogs-text button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--green);
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--green);
+    background: #fff;
+}
+
+.blogs-text button:hover {
+    background: var(--green);
+    color: #ffff;
+}
+
+.new-blog .heading-blog {
+    padding: 70px 0px 0px 0px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow);
+    letter-spacing: 4px;
+    color: var(--green);
+}
+
+.new-blog .heading-blog span {
+    color: var(--black);
+}
+
+.footer {
+    background: #f5f5f5;
+}
+
+.inner-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    padding: 8rem 9%;
+}
+
+.footer .inner-footer h1 {
+    font-size: 25px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.footer .footer-btn a {
+    color: var(--black);
+    display: block;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.footer .footer-btn a:hover {
+    transform: translateX(12px);
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.designer {
+    text-align: center;
+    margin: 20px 0px 20px;
+    font-size: 20px;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+}
+
+.designer h1 {
+    color: var(--green);
+}
+
+.designer span {
+    color: var(--black);
+}
+
+.designer span:hover {
+    transform: translateY(100px);
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        padding: 2rem 2%;
+    }
+    .header .navbtn a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header .navbtn {
+        position: absolute;
+        top: 120%;
+        left: 0%;
+        right: 0%;
+        transform: translateX(1000%);
+        background: #ffff;
+    }
+    .active .navbtn {
+        transform: translateX(0%);
+    }
+    .header .navbtn a {
+        display: block;
+        padding: 10px;
+        color: var(--black);
+        font-size: 20px;
+        color: #ffff;
+        background: var(--green);
+        margin: 10px;
+    }
+    .header .navbtn a:hover {
+        color: #ffff;
+    }
+    .fa-bars {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 620px) {}
+
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 100px;
+    }
+}
